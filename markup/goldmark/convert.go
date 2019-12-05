@@ -35,6 +35,7 @@ import (
 	"github.com/yuin/goldmark"
 	hl "github.com/yuin/goldmark-highlighting"
 	"github.com/yuin/goldmark/extension"
+	myext "github.com/kaleocheng/goldmark-extensions"
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
@@ -120,6 +121,14 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 
 	if cfg.Extensions.Footnote {
 		extensions = append(extensions, extension.Footnote)
+	}
+
+	if cfg.Extensions.Username {
+		extensions = append(extensions, myext.Username)
+	}
+
+	if cfg.Extensions.Latex {
+		extensions = append(extensions, myext.Latex)
 	}
 
 	if cfg.Parser.AutoHeadingID {
