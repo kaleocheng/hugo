@@ -197,6 +197,8 @@ github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqx
 github.com/jonboulle/clockwork v0.1.0/go.mod h1:Ii8DK3G1RaLaWxj9trq07+26W01tbo22gdxWY5EU2bo=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
 github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7VTCxuUUipMqKk8s4w=
+github.com/kaleocheng/goldmark-extensions v0.0.0-20191205031134-c9ea3fa81172 h1:c2YouprX+We/U38JzTMIKrVb5iapatHxuntjsK9+vVk=
+github.com/kaleocheng/goldmark-extensions v0.0.0-20191205031134-c9ea3fa81172/go.mod h1:OECvJUx6TNsqAVJR0hpdQznbXr9s7T7jeFTKMrfh0OE=
 github.com/kisielk/errcheck v1.1.0/go.mod h1:EZBBE59ingxPouuu3KfxchcWSUPOHkagtvWXihfKN4Q=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=
@@ -242,8 +244,6 @@ github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 h1:zYyBkD/k9seD2A7fsi6
 github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646/go.mod h1:jpp1/29i3P1S/RLdc7JQKbRpFeM1dOBd8T9ki5s+AY8=
 github.com/nicksnyder/go-i18n v1.10.0 h1:5AzlPKvXBH4qBzmZ09Ua9Gipyruv6uApMcrNZdo96+Q=
 github.com/nicksnyder/go-i18n v1.10.0/go.mod h1:HrK7VCrbOvQoUAQ7Vpy7i87N7JZZZ7R2xBGjv0j365Q=
-github.com/niklasfasching/go-org v0.1.8 h1:Kjvs6lP+LIILHhc9zIJ4Gu90a/pVY483if2Qmu8v4Fg=
-github.com/niklasfasching/go-org v0.1.8/go.mod h1:AsLD6X7djzRIz4/RFZu8vwRL0VGjUvGZCCH1Nz0VdrU=
 github.com/niklasfasching/go-org v0.1.9 h1:Toz8WMIt+qJb52uYEk1YD/muLuOOmRt1CfkV+bKVMkI=
 github.com/niklasfasching/go-org v0.1.9/go.mod h1:AsLD6X7djzRIz4/RFZu8vwRL0VGjUvGZCCH1Nz0VdrU=
 github.com/nkovacs/streamquote v0.0.0-20170412213628-49af9bddb229/go.mod h1:0aYXnNPJ8l7uZxf45rWW1a/uME32OF0rhiYGNQ2oF2E=
@@ -345,8 +345,8 @@ github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q
 github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:aYKd//L2LvnjZzWKhF00oedf4jCCReLcmhLdhm1A27Q=
 github.com/yuin/goldmark v1.1.7 h1:XiwWADvxJeIM1JbXqthrEhDc19hTMui+o+QaY1hGXlk=
 github.com/yuin/goldmark v1.1.7/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
-github.com/yuin/goldmark v1.1.17 h1:t7bl7JAmainKs/Uhmr1XZVkRJsgL2UwdTCtTuYL7RAY=
-github.com/yuin/goldmark v1.1.17/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
+github.com/yuin/goldmark v1.1.12 h1:0F+81j9PrMg0YBnGfqsh5IaB3vGQpiUeaxi8R8a3Eic=
+github.com/yuin/goldmark v1.1.12/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.18 h1:0Gpa+rpkhzQehagonRrmf0h1IHidn5DfSLM6oUjx5EU=
 github.com/yuin/goldmark v1.1.18/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark-highlighting v0.0.0-20191202084645-78f32c8dd6d5 h1:QbH7ca1qtgZHrzvcVAEoiJIwBqrXxMOfHYfwZIniIK0=

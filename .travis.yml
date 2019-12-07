@@ -13,31 +13,16 @@ git:
   depth: false
 
 go:
-  - "1.12.13"
   - "1.13.4"
-  - master
 
 arch:
-  - amd64
   - arm64
 
 os:
   - linux
-  - osx
-  - windows
 
 jobs:
-  allow_failures:
-    - go: master
-    - arch: arm64
   fast_finish: true
-  exclude:
-    - os: windows
-      go: master
-    - arch: arm64
-      os: osx
-    - arch: arm64
-      os: windows
 
 cache:
   directories:
@@ -65,20 +50,10 @@ install:
 
 script:
   - go mod tidy
-  - go mod download || true
-  - mage -v test
-  - if [ "$TRAVIS_ARCH" = "amd64" ]; then
-        mage -v check;
-    else
-        HUGO_TIMEOUT=30000 mage -v check;
-    fi
-  - mage -v hugo
-  - ./hugo -s docs/
-  - ./hugo --renderToMemory -s docs/
   - df -h
   - mage -v docker
   - docker tag hugo kaleocheng/hugo
-  - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  - docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASS"
   - docker push kaleocheng/hugo
 
 services:
