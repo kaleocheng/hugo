@@ -64,6 +64,7 @@ install:
   - go get github.com/magefile/mage
 
 script:
+  - go mod tidy
   - go mod download || true
   - mage -v test
   - if [ "$TRAVIS_ARCH" = "amd64" ]; then
@@ -75,3 +76,10 @@ script:
   - ./hugo -s docs/
   - ./hugo --renderToMemory -s docs/
   - df -h
+  - mage -v docker
+  - docker tag hugo kaleocheng/hugo
+  - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  - docker push kaleocheng/hugo
+
+services:
+  - docker
