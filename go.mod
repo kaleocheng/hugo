@@ -24,7 +24,7 @@ require (
 	github.com/google/go-cmp v0.3.2-0.20191028172631-481baca67f93
 	github.com/gorilla/websocket v1.4.0
 	github.com/jdkato/prose v1.1.0
-	github.com/kaleocheng/goldmark-extensions v0.0.0-20191205031134-c9ea3fa81172
+	github.com/kaleocheng/goldmark-extensions v0.0.1
 	github.com/kyokomi/emoji v2.1.0+incompatible
 	github.com/magefile/mage v1.4.0
 	github.com/magiconair/properties v1.8.1 // indirect
