@@ -16,7 +16,7 @@ go:
   - "1.13.4"
 
 arch:
-  - arm64
+  - amd64
 
 os:
   - linux
