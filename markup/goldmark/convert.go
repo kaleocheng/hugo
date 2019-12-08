@@ -131,6 +131,14 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 		extensions = append(extensions, myext.Latex)
 	}
 
+	if cfg.Extensions.Post {
+		extensions = append(extensions, myext.Post)
+	}
+
+	if cfg.Extensions.Refer {
+		extensions = append(extensions, myext.Refer)
+	}
+
 	if cfg.Parser.AutoHeadingID {
 		parserOptions = append(parserOptions, parser.WithAutoHeadingID())
 	}

@@ -26,6 +26,8 @@ var Default = Config{
 		TaskList:       true,
 		At:             true,
 		Latex:          true,
+		Post:           true,
+		Refer:          true,
 	},
 	Renderer: Renderer{
 		Unsafe: false,
@@ -57,6 +59,8 @@ type Extensions struct {
 	// My extensions
 	At    bool
 	Latex bool
+	Post  bool
+	Refer bool
 }
 
 type Renderer struct {
