@@ -32,10 +32,10 @@ import (
 	"github.com/gohugoio/hugo/markup/converter"
 	"github.com/gohugoio/hugo/markup/highlight"
 	"github.com/gohugoio/hugo/markup/tableofcontents"
+	myext "github.com/kaleocheng/goldmark-extensions"
 	"github.com/yuin/goldmark"
 	hl "github.com/yuin/goldmark-highlighting"
 	"github.com/yuin/goldmark/extension"
-	myext "github.com/kaleocheng/goldmark-extensions"
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
@@ -123,8 +123,8 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 		extensions = append(extensions, extension.Footnote)
 	}
 
-	if cfg.Extensions.Username {
-		extensions = append(extensions, myext.Username)
+	if cfg.Extensions.At {
+		extensions = append(extensions, myext.At)
 	}
 
 	if cfg.Extensions.Latex {

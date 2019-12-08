@@ -24,7 +24,7 @@ var Default = Config{
 		Strikethrough:  true,
 		Linkify:        true,
 		TaskList:       true,
-		Username:       true,
+		At:             true,
 		Latex:          true,
 	},
 	Renderer: Renderer{
@@ -55,8 +55,8 @@ type Extensions struct {
 	TaskList      bool
 
 	// My extensions
-	Username bool
-	Latex    bool
+	At    bool
+	Latex bool
 }
 
 type Renderer struct {
