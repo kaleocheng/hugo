@@ -111,7 +111,7 @@ var docker = sh.RunCmd("docker")
 
 // Build hugo Docker container
 func Docker() error {
-	if err := docker("build", "-t", "hugo", "."); err != nil {
+	if err := docker("build", "--build-arg", "HUGO_BUILD_TAGS="+buildTags(), "-t", "hugo", "."); err != nil {
 		return err
 	}
 	// yes ignore errors here

@@ -51,6 +51,7 @@ install:
 script:
   - go mod tidy
   - df -h
+  - export HUGO_BUILD_TAGS=extended
   - mage -v docker
   - docker tag hugo kaleocheng/hugo
   - docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASS"
