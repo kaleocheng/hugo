@@ -28,6 +28,7 @@ var Default = Config{
 		Latex:          true,
 		Post:           true,
 		Refer:          true,
+		Date:           true,
 	},
 	Renderer: Renderer{
 		Unsafe: false,
@@ -61,6 +62,7 @@ type Extensions struct {
 	Latex bool
 	Post  bool
 	Refer bool
+	Date  bool
 }
 
 type Renderer struct {
