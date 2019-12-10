@@ -108,7 +108,7 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 	}
 
 	if cfg.Extensions.TaskList {
-		extensions = append(extensions, extension.TaskList)
+		extensions = append(extensions, myext.TaskList)
 	}
 
 	if cfg.Extensions.Typographer {
